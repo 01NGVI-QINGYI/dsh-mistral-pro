@@ -1,0 +1,69 @@
+{
+  "name": "dsh-mistral-pro",
+  "version": "0.1.2",
+  "description": "Mistral subscription (Vibe Pro/Team) provider for DeepSeek Harness: multi-account failover, model catalog, subscription usage pill and settings page.",
+  "icon": "icon.svg",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.ja.md",
+    "README.en.md",
+    "docs/images/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh",
+    "mistral",
+    "vibe",
+    "llm",
+    "cordis"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-launch-environment": ">=0.2.1-rc.5",
+    "@deepseek-ai/dsh-llm": ">=0.2.1-rc.5",
+    "@deepseek-ai/schemastery": ">=3.19.0"
+  },
+  "author": "01NGVI-QINGYI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/01NGVI-QINGYI/dsh-mistral-pro.git"
+  },
+  "homepage": "https://github.com/01NGVI-QINGYI/dsh-mistral-pro#readme",
+  "bugs": {
+    "url": "https://github.com/01NGVI-QINGYI/dsh-mistral-pro/issues"
+  }
+}
