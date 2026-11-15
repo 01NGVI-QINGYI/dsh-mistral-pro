@@ -81,6 +81,7 @@
     "streamIdle": "Stream idle timeout (ms)",
     "modelsRefresh": "Model catalog refresh (minutes)",
     "maxTokensCap": "Default output cap (tokens)",
+    "promptCacheKey": "Prompt cache key (empty = auto, \"off\" = disable)",
     "proxy": "Proxy URL (http/https/socks5)",
     "save": "Save advanced settings",
     "saved": "Advanced settings saved."
