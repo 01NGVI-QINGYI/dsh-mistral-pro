@@ -81,6 +81,7 @@
     "streamIdle": "流空闲超时（毫秒）",
     "modelsRefresh": "模型目录刷新（分钟）",
     "maxTokensCap": "默认输出上限（token）",
+    "promptCacheKey": "Prompt 缓存键（留空=自动，\"off\"=关闭）",
     "proxy": "代理地址（http/https/socks5）",
     "save": "保存高级设置",
     "saved": "高级设置已保存。"
